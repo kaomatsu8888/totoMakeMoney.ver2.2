@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFFB24002AB471A5008ADE11 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB23FF2AB471A5008ADE11 /* AppColor.swift */; };
+		BFFB24022AB472C4008ADE11 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB24012AB472C4008ADE11 /* ColorViewController.swift */; };
 		BFFD94252AB2E056009ACED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD94242AB2E056009ACED2 /* AppDelegate.swift */; };
 		BFFD94272AB2E056009ACED2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD94262AB2E056009ACED2 /* SceneDelegate.swift */; };
 		BFFD94292AB2E056009ACED2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD94282AB2E056009ACED2 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFFB23FF2AB471A5008ADE11 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		BFFB24012AB472C4008ADE11 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		BFFD94212AB2E056009ACED2 /* totoMakeMoney.ver2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = totoMakeMoney.ver2.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFD94242AB2E056009ACED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFD94262AB2E056009ACED2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				BFFD94242AB2E056009ACED2 /* AppDelegate.swift */,
+				BFFB24012AB472C4008ADE11 /* ColorViewController.swift */,
 				BFFD94262AB2E056009ACED2 /* SceneDelegate.swift */,
 				BFFD94282AB2E056009ACED2 /* ViewController.swift */,
 				BFFD942A2AB2E056009ACED2 /* Main.storyboard */,
+				BFFB23FF2AB471A5008ADE11 /* AppColor.swift */,
 				BFFD942D2AB2E057009ACED2 /* Assets.xcassets */,
 				BFFD942F2AB2E057009ACED2 /* LaunchScreen.storyboard */,
 				BFFD94322AB2E057009ACED2 /* Info.plist */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFD94292AB2E056009ACED2 /* ViewController.swift in Sources */,
+				BFFB24002AB471A5008ADE11 /* AppColor.swift in Sources */,
 				BFFD94252AB2E056009ACED2 /* AppDelegate.swift in Sources */,
+				BFFB24022AB472C4008ADE11 /* ColorViewController.swift in Sources */,
 				BFFD94272AB2E056009ACED2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // -----＊＊追記部分＊＊----- //
+        changeNavigationBarColor()
+        // -----＊＊追記部分＊＊----- //
         return true
+    }
+    // -----＊＊追記部分＊＊----- //
+    func changeNavigationBarColor() {
+        // 全てのNavigation Barの色を変更する
+        // Navigation Bar の背景色の変更
+        UINavigationBar.appearance().barTintColor = AppColor.primary
+        // Navigation Bar の文字色の変更
+        UINavigationBar.appearance().tintColor = AppColor.secondary
+        // Navigation Bar のタイトルの文字色の変更
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: AppColor.background]
+    }
+    // -----＊＊追記部分＊＊----- //
+
     }
 
     // MARK: UISceneSession Lifecycle
@@ -32,5 +48,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+
 
