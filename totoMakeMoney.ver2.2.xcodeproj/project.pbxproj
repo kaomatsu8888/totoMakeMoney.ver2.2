@@ -15,6 +15,7 @@
 		BFFD942C2AB2E056009ACED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFD942A2AB2E056009ACED2 /* Main.storyboard */; };
 		BFFD942E2AB2E057009ACED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFD942D2AB2E057009ACED2 /* Assets.xcassets */; };
 		BFFD94312AB2E057009ACED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFD942F2AB2E057009ACED2 /* LaunchScreen.storyboard */; };
+		BFFE57742AB4B7CD0066D9C9 /* StadiumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE57732AB4B7CD0066D9C9 /* StadiumTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BFFD942D2AB2E057009ACED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFD94302AB2E057009ACED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFFD94322AB2E057009ACED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFFE57732AB4B7CD0066D9C9 /* StadiumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BFFD942D2AB2E057009ACED2 /* Assets.xcassets */,
 				BFFD942F2AB2E057009ACED2 /* LaunchScreen.storyboard */,
 				BFFD94322AB2E057009ACED2 /* Info.plist */,
+				BFFE57732AB4B7CD0066D9C9 /* StadiumTableViewController.swift */,
 			);
 			path = totoMakeMoney.ver2.2;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				BFFD94292AB2E056009ACED2 /* ViewController.swift in Sources */,
 				BFFB24002AB471A5008ADE11 /* AppColor.swift in Sources */,
+				BFFE57742AB4B7CD0066D9C9 /* StadiumTableViewController.swift in Sources */,
 				BFFD94252AB2E056009ACED2 /* AppDelegate.swift in Sources */,
 				BFFB24022AB472C4008ADE11 /* ColorViewController.swift in Sources */,
 				BFFD94272AB2E056009ACED2 /* SceneDelegate.swift in Sources */,
