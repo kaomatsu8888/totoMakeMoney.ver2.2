@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF8C96E02AB57E030092B33C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C96DF2AB57E030092B33C /* TableViewController.swift */; };
 		BFE43EC52AB53196003745E1 /* StadiumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE43EC42AB53196003745E1 /* StadiumTableViewCell.swift */; };
 		BFE43EC72AB542D1003745E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE43EC62AB542D1003745E1 /* DetailViewController.swift */; };
 		BFE43EC92AB55AB5003745E1 /* TotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE43EC82AB55AB5003745E1 /* TotoViewController.swift */; };
+		BFE43ECF2AB571EA003745E1 /* MatchDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE43ECE2AB571EA003745E1 /* MatchDayViewController.swift */; };
+		BFE43ED12AB572A2003745E1 /* MatchDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE43ED02AB572A2003745E1 /* MatchDayTableViewCell.swift */; };
 		BFFB24002AB471A5008ADE11 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB23FF2AB471A5008ADE11 /* AppColor.swift */; };
 		BFFB24022AB472C4008ADE11 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB24012AB472C4008ADE11 /* ColorViewController.swift */; };
 		BFFD94252AB2E056009ACED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD94242AB2E056009ACED2 /* AppDelegate.swift */; };
@@ -22,9 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF8C96DF2AB57E030092B33C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BFE43EC42AB53196003745E1 /* StadiumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumTableViewCell.swift; sourceTree = "<group>"; };
 		BFE43EC62AB542D1003745E1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BFE43EC82AB55AB5003745E1 /* TotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoViewController.swift; sourceTree = "<group>"; };
+		BFE43ECE2AB571EA003745E1 /* MatchDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDayViewController.swift; sourceTree = "<group>"; };
+		BFE43ED02AB572A2003745E1 /* MatchDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDayTableViewCell.swift; sourceTree = "<group>"; };
 		BFFB23FF2AB471A5008ADE11 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		BFFB24012AB472C4008ADE11 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		BFFD94212AB2E056009ACED2 /* totoMakeMoney.ver2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = totoMakeMoney.ver2.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +58,7 @@
 		BFFD94182AB2E056009ACED2 = {
 			isa = PBXGroup;
 			children = (
+				BF8C96DF2AB57E030092B33C /* TableViewController.swift */,
 				BFFD94232AB2E056009ACED2 /* totoMakeMoney.ver2.2 */,
 				BFFD94222AB2E056009ACED2 /* Products */,
 			);
@@ -74,6 +81,8 @@
 				BFFD94262AB2E056009ACED2 /* SceneDelegate.swift */,
 				BFFD94282AB2E056009ACED2 /* ViewController.swift */,
 				BFFD942A2AB2E056009ACED2 /* Main.storyboard */,
+				BFE43ECE2AB571EA003745E1 /* MatchDayViewController.swift */,
+				BFE43ED02AB572A2003745E1 /* MatchDayTableViewCell.swift */,
 				BFFD942D2AB2E057009ACED2 /* Assets.xcassets */,
 				BFFD94322AB2E057009ACED2 /* Info.plist */,
 				BFFE57732AB4B7CD0066D9C9 /* StadiumTableViewController.swift */,
@@ -158,9 +167,12 @@
 			files = (
 				BFFD94292AB2E056009ACED2 /* ViewController.swift in Sources */,
 				BFFB24002AB471A5008ADE11 /* AppColor.swift in Sources */,
+				BFE43ED12AB572A2003745E1 /* MatchDayTableViewCell.swift in Sources */,
 				BFFE57742AB4B7CD0066D9C9 /* StadiumTableViewController.swift in Sources */,
+				BFE43ECF2AB571EA003745E1 /* MatchDayViewController.swift in Sources */,
 				BFFD94252AB2E056009ACED2 /* AppDelegate.swift in Sources */,
 				BFFB24022AB472C4008ADE11 /* ColorViewController.swift in Sources */,
+				BF8C96E02AB57E030092B33C /* TableViewController.swift in Sources */,
 				BFE43EC52AB53196003745E1 /* StadiumTableViewCell.swift in Sources */,
 				BFE43EC92AB55AB5003745E1 /* TotoViewController.swift in Sources */,
 				BFFD94272AB2E056009ACED2 /* SceneDelegate.swift in Sources */,

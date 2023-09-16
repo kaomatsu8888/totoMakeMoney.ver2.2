@@ -91,7 +91,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="315" id="b64-91-6yD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DetailVC" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="315" id="b64-91-6yD" customClass="StadiumTableViewCell" customModule="totoMakeMoney_ver2_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="315"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b64-91-6yD" id="scC-CD-Bs7">
@@ -141,70 +141,76 @@ Cgo
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9iD-2P-hA5">
-                                <rect key="frame" x="130" y="161" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vh2-g8-q5s">
-                                <rect key="frame" x="130" y="292" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aV8-94-ZCC">
-                                <rect key="frame" x="130" y="432" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma9-Yx-Dkh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j71-OO-mX5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="bottom" secondItem="j71-OO-mX5" secondAttribute="bottom" id="0ja-r4-8aH"/>
+                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="leading" secondItem="j71-OO-mX5" secondAttribute="leading" id="GBU-kF-Ffn"/>
+                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="top" secondItem="lzD-Mq-FnR" secondAttribute="top" id="JDH-Ol-pek"/>
+                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="trailing" secondItem="j71-OO-mX5" secondAttribute="trailing" id="bH0-Nb-8cU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6HN-qA-DD0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Y1-y1-bKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="1915"/>
+            <point key="canvasLocation" x="1409.9236641221373" y="1914.7887323943662"/>
         </scene>
         <!--試合予定-->
         <scene sceneID="kA9-QP-Yne">
             <objects>
-                <viewController id="f9M-Vp-q12" sceneMemberID="viewController">
+                <viewController id="f9M-Vp-q12" customClass="MatchDayViewController" customModule="totoMakeMoney_ver2_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8YS-xS-JTe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" translatesAutoresizingMaskIntoConstraints="NO" id="ZRa-LE-x34">
-                                <rect key="frame" x="0.0" y="134" width="393" height="58"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZRa-LE-x34" id="dai-Sy-w4K">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="58"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnu-Uz-DKB">
-                                <rect key="frame" x="138" y="670" width="117" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="lQA-Ut-wXP" kind="show" id="dOo-Bb-Mhh"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K4R-BM-1wU">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MatchDayCell" textLabel="3ej-6h-mp0" rowHeight="50" style="IBUITableViewCellStyleDefault" id="p91-TX-KgJ">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p91-TX-KgJ" id="AIh-dw-K74">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ej-6h-mp0">
+                                                    <rect key="frame" x="20" y="0.0" width="353" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ohX-LY-MLw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K4R-BM-1wU" firstAttribute="leading" secondItem="ohX-LY-MLw" secondAttribute="leading" id="45g-q3-UN9"/>
+                            <constraint firstItem="ohX-LY-MLw" firstAttribute="bottom" secondItem="K4R-BM-1wU" secondAttribute="bottom" id="BXV-bV-HnM"/>
+                            <constraint firstItem="ohX-LY-MLw" firstAttribute="trailing" secondItem="K4R-BM-1wU" secondAttribute="trailing" id="Bq3-kK-sbs"/>
+                            <constraint firstItem="K4R-BM-1wU" firstAttribute="top" secondItem="ohX-LY-MLw" secondAttribute="top" id="Xgt-Rr-EXa"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zOK-Fl-JhY"/>
                     <navigationItem key="navigationItem" title="試合予定" id="ukc-QL-brS"/>
+                    <connections>
+                        <outlet property="matchDaysTableView" destination="K4R-BM-1wU" id="rD1-9S-n3f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcH-YY-kzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +242,7 @@ Cgo
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="3Wi-7C-0Q9" kind="relationship" relationship="viewControllers" id="LuY-K8-9s9"/>
+                        <segue destination="f9M-Vp-q12" kind="relationship" relationship="viewControllers" id="vTx-Qx-SgR"/>
                         <segue destination="gQF-wh-KjG" kind="relationship" relationship="viewControllers" id="uf1-WV-Y0G"/>
                         <segue destination="b9Y-ic-xqf" kind="relationship" relationship="viewControllers" id="8JS-wB-CER"/>
                         <segue destination="u5K-U9-M4o" kind="relationship" relationship="viewControllers" id="X2r-hN-JQP"/>
@@ -245,25 +251,6 @@ Cgo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyw-hj-pq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-437" y="72"/>
-        </scene>
-        <!--MatchDay-->
-        <scene sceneID="17z-Cz-6Cv">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Wi-7C-0Q9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="MatchDay" image="soccerball" catalog="system" id="NQP-6n-kgE"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0GV-jC-psf">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="f9M-Vp-q12" kind="relationship" relationship="rootViewController" id="IeT-wW-s4X"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iax-Zn-Ckk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="467.93893129770993" y="-232.3943661971831"/>
         </scene>
         <!--掲示板-->
         <scene sceneID="gHZ-2D-3N3">
@@ -327,7 +314,6 @@ Cgo
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="info.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" width="128" height="92"/>
-        <image name="soccerball" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

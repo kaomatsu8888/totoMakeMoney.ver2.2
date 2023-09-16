@@ -8,7 +8,9 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    var selectLocation: String?
+    var selectImage: UIImage?
+    
 //    @IBOutlet weak var StadiumName: UIImageView!
  
 //    @IBOutlet weak var Stadiumintro: UILabel!
