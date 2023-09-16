@@ -7,14 +7,26 @@
 
 import UIKit
 
+struct User {
+    let icon: UIImage?
+    let name: String
+}
+
 class ColorViewController: UITabBarController {
+    @IBOutlet private weak var tableView: UITableView!
+    private let users: [User] = [
+           User(icon: #imageLiteral(resourceName: "icon") , name: "Angel"),
+           User(icon: #imageLiteral(resourceName: "icon") , name: "Bob"),
+           User(icon: #imageLiteral(resourceName: "icon") , name: "Chirs"),
+       ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    }
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -26,4 +38,4 @@ class ColorViewController: UITabBarController {
     }
     */
 
-}
+
