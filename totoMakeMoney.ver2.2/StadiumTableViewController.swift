@@ -9,6 +9,8 @@ import UIKit
 
 class StadiumTableViewController: UITableViewController {
         
+    
+    
     override func viewDidLoad() {
             super.viewDidLoad()
             
@@ -22,14 +24,16 @@ class StadiumTableViewController: UITableViewController {
         
         // MARK: - Table view data source
         
+    //セクション数のコード
     override func numberOfSections(in tableView: UITableView) -> Int {
             // #warning Incomplete implementation, return the number of sections
             return 1
         }
         
+    // 指定されたセクションに何行あるかを返すメソッドです。この場合、1が返されているので1行
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             // #warning Incomplete implementation, return the number of rows
-            return 1
+            return 3
         }
         
 
@@ -37,7 +41,16 @@ class StadiumTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StadiumTableViewCell", for: indexPath)
 
         var contents = cell.defaultContentConfiguration()
-        contents.text = "駅前不動産スタジアム"
+        switch indexPath.row {
+           case 0:
+               contents.text = "駅前不動産スタジアム"
+           case 1:
+               contents.text = "レゾナックドーム大分" // ここに2行目のテキストを入力
+           case 2:
+               contents.text = "べスト電器スタジアム" // ここに3行目のテキストを入力
+           default:
+               contents.text = ""
+           }
 
 
         cell.contentConfiguration = contents

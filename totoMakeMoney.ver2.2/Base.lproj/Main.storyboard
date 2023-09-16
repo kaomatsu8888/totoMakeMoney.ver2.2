@@ -65,6 +65,7 @@
                                 <connections>
                                     <outlet property="iconImageView" destination="yAv-nu-9bb" id="0lT-uo-Grd"/>
                                     <outlet property="nameLabel" destination="qEd-Wt-mVx" id="s13-Kt-kSP"/>
+                                    <segue destination="SEX-Gu-ZBT" kind="show" id="Jg8-cL-a67"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -78,6 +79,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYY-GP-URU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1351.9083969465648" y="1191.549295774648"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="AeP-WD-rOc">
+            <objects>
+                <viewController id="SEX-Gu-ZBT" customClass="DetailViewController" customModule="totoMakeMoney_ver2_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KNp-Yn-x2M">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BJx-Y4-oqd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SD5-jr-g6U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRu-03-Ugv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="1193"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mtU-Qx-aPZ">

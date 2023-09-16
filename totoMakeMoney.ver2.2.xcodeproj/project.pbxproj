@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BFE43EC52AB53196003745E1 /* StadiumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE43EC42AB53196003745E1 /* StadiumTableViewCell.swift */; };
+		BFE43EC72AB542D1003745E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE43EC62AB542D1003745E1 /* DetailViewController.swift */; };
 		BFFB24002AB471A5008ADE11 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB23FF2AB471A5008ADE11 /* AppColor.swift */; };
 		BFFB24022AB472C4008ADE11 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB24012AB472C4008ADE11 /* ColorViewController.swift */; };
 		BFFD94252AB2E056009ACED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD94242AB2E056009ACED2 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		BFE43EC42AB53196003745E1 /* StadiumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumTableViewCell.swift; sourceTree = "<group>"; };
+		BFE43EC62AB542D1003745E1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BFFB23FF2AB471A5008ADE11 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		BFFB24012AB472C4008ADE11 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		BFFD94212AB2E056009ACED2 /* totoMakeMoney.ver2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = totoMakeMoney.ver2.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				BFFD94322AB2E057009ACED2 /* Info.plist */,
 				BFFE57732AB4B7CD0066D9C9 /* StadiumTableViewController.swift */,
 				BFE43EC42AB53196003745E1 /* StadiumTableViewCell.swift */,
+				BFE43EC62AB542D1003745E1 /* DetailViewController.swift */,
 			);
 			path = totoMakeMoney.ver2.2;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				BFFB24022AB472C4008ADE11 /* ColorViewController.swift in Sources */,
 				BFE43EC52AB53196003745E1 /* StadiumTableViewCell.swift in Sources */,
 				BFFD94272AB2E056009ACED2 /* SceneDelegate.swift in Sources */,
+				BFE43EC72AB542D1003745E1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
