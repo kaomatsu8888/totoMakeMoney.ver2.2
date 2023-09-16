@@ -10,6 +10,7 @@ import UIKit
 class StadiumTableViewController: UITableViewController {
     
     var locations = ["駅前不動産スタジアム", "レゾナックドーム大分", "べスト電器スタジアム"]
+    let explannations = ["サガン鳥栖のホームスタジアム。徒歩5分とアクセス良好", "大分トリニータのホームスタジアム。パークプレイス大分があり、買い物も楽しめる","ギラヴァンツ北九州のホームスタジアム。海の横に隣接している"]
     
     
     
@@ -58,7 +59,10 @@ class StadiumTableViewController: UITableViewController {
         let VC = self.storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
         VC.selectLocation = locations[indexPath.row]
         VC.selectImage = UIImage(named: "image\(indexPath.row + 1)")
-        VC.present(VC, animated: true)
+        VC.selectexplannation = explannations[indexPath.row]
+        VC.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(VC, animated: true)
+//        present(VC, animated: true)
     }
     /*
      // Override to support conditional editing of the table view.

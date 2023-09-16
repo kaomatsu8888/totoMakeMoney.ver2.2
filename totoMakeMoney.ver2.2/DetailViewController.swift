@@ -8,18 +8,29 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
     var selectLocation: String?
     var selectImage: UIImage?
-    
-//    @IBOutlet weak var StadiumName: UIImageView!
+    var selectexplannation: String?
+
+    @IBOutlet weak var studiumName: UILabel!
+    @IBOutlet weak var studiumview: UIImageView!
+    @IBOutlet weak var sturiumexp: UILabel!
+    //    @IBOutlet weak var explanation: UILabel!
+  
+    //    @IBOutlet weak var StadiumName: UIImageView!
  
 //    @IBOutlet weak var Stadiumintro: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        studiumName.text = selectLocation
+        studiumview.image = selectImage
+        sturiumexp.text = selectexplannation
+        
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -32,3 +43,4 @@ class DetailViewController: UIViewController {
     */
 
 }
+
