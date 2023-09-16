@@ -9,6 +9,7 @@ import UIKit
 
 class StadiumTableViewController: UITableViewController {
         
+    var locations = ["駅前不動産スタジアム", "レゾナックドーム大分", "べスト電器スタジアム"]
     
     
     override func viewDidLoad() {
@@ -30,32 +31,24 @@ class StadiumTableViewController: UITableViewController {
             return 1
         }
         
-    // 指定されたセクションに何行あるかを返すメソッドです。この場合、1が返されているので1行
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             // #warning Incomplete implementation, return the number of rows
-            return 3
+        return locations.count
         }
         
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StadiumTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StadiumTableViewCell", for: indexPath) as! StadiumTableViewCell
 
-        var contents = cell.defaultContentConfiguration()
-        switch indexPath.row {
-           case 0:
-               contents.text = "駅前不動産スタジアム"
-           case 1:
-               contents.text = "レゾナックドーム大分" // ここに2行目のテキストを入力
-           case 2:
-               contents.text = "べスト電器スタジアム" // ここに3行目のテキストを入力
-           default:
-               contents.text = ""
-           }
+        
+        cell.nameLabel.text = locations[indexPath.row]
+        
+        
 
-
-        cell.contentConfiguration = contents
         // Configure the cell...
+        
   
+        
         
         return cell
     }
@@ -105,6 +98,11 @@ class StadiumTableViewController: UITableViewController {
          // Pass the selected object to the new view controller.
          }
          */
-        
+    
+    //Cellがタップされたときに呼ばれるメソッド indexPathでどこが押されたかを取得できる
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
     }
+        
+}
 

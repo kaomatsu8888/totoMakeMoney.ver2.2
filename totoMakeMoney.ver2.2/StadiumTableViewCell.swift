@@ -9,13 +9,13 @@ import UIKit
 
 class StadiumTableViewCell: UITableViewCell {
     
-    @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var iconImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
     
-    func setup(icon: UIImage, name: String, age: Int) {
-        nameLabel.text = name
-         iconImageView.image = icon  // この行は不要または修正が必要です
-    }
+//    func setup(icon: UIImage, name: String, age: Int) {
+//        nameLabel.text = name
+//         iconImageView.image = icon  // この行は不要または修正が必要です
+//    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  TotoViewController.swift
 //  totoMakeMoney.ver2.2
 //
 //  Created by kaoru matsunaga on 2023/09/16.
@@ -7,11 +7,8 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class TotoViewController: UIViewController {
 
-//    @IBOutlet weak var StadiumName: UIImageView!
- 
-//    @IBOutlet weak var Stadiumintro: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
