@@ -174,24 +174,8 @@ Cgo
                     <view key="view" contentMode="scaleToFill" id="lzD-Mq-FnR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma9-Yx-Dkh">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="j71-OO-mX5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="bottom" secondItem="j71-OO-mX5" secondAttribute="bottom" id="0ja-r4-8aH"/>
-                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="leading" secondItem="j71-OO-mX5" secondAttribute="leading" id="GBU-kF-Ffn"/>
-                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="top" secondItem="lzD-Mq-FnR" secondAttribute="top" id="JDH-Ol-pek"/>
-                            <constraint firstItem="Ma9-Yx-Dkh" firstAttribute="trailing" secondItem="j71-OO-mX5" secondAttribute="trailing" id="bH0-Nb-8cU"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6HN-qA-DD0"/>
                 </viewController>
